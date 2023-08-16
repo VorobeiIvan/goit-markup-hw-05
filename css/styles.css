@@ -142,6 +142,9 @@ address {
     font-style: normal;
 }
 
+input {
+	font-family: inherit;
+}
 /* ======================================== General helper classes ========================================  */
 .visually-hidden {
     position: absolute;
