@@ -553,8 +553,8 @@ START Footer | SECTION 7
           Subscribe
         </label>
         <div class="footer-input-btn-box ">
-          <input id="input-email" type="email" name="email" placeholder="E-mail" required   />
-          <button class="input-footer-btn btn" type="submit" aria-label="Subscribe"  >
+          <input id="input-email" type="email" name="email" placeholder="E-mail" required />
+          <button class="input-footer-btn btn" type="submit" aria-label="Subscribe">
             Subscribe
             <svg class="icon footer-btn-icon" width="24" height="24" aria-label="Subscribe button airplane icon">
               <use href="./images/icons.svg#icon-plane"></use>
@@ -586,40 +586,48 @@ END Footer | SECTION 7
       </button>
 
       <!-- ---------- Modal form input ---------- -->
+      <p class="modal-cta-text">Leave your contacts and we will call you back</p>
+
       <form class="modal-form">
         <!-- Name -->
-        <label class="modal-input-lable" for="#modal-person-input">
-          Subscribe
+        <label class="modal-input-label">
+          Name
+          <input class="modal-input" type="text" name="modal-inputs" placeholder="your name" pattern="" required />
+          <svg class="modal-person-input-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
         </label>
-        <input id="modal-person-inpu" type="text" name="person" placeholder="|" pattern="" />
-        <svg class="modal-person-input-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-person"></use>
-        </svg>
+
+ 
         <!-- Phone -->
-        <label class="modal-input-lable" for="#modal-phone-input">
-          Subscribe
+        <label class="modal-input-label">
+          Phone
+          <input class="modal-input" type="phone" name="modal-inputs" placeholder="+xx-(xxx)-xxx-xx-xx"  pattern="" required/>
+          <svg class="close-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
         </label>
-        <input id="modal-phone-input" type="phone" name="phone" placeholder="|" pattern="" />
-        <svg class="close-btn-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
+
         <!-- E-mail -->
-        <label class="modal-input-lable" for="#modal-email-input">
-          Subscribe
+        <label class="modal-input-label" >
+          E-mail
+          <input class="modal-input" type="email" name="modal-inputs" placeholder="e-mail@email.com" pattern="" required/>
+          <svg class="close-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
         </label>
-        <input id="modal-email-input" type="email" name="email" placeholder="|" pattern="" />
-        <svg class="close-btn-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-email"></use>
-        </svg>
+
 
         <!-- Textarea -->
-        <label class="modal-input-lable" for="#modal-textarea">
-          Subscribe
-          <textarea class="modal-textera" name="name" placeholder="|"></textarea>
+        <label class="modal-input-label" >
+          Comment
+          <textarea class="modal-textera " name="modal-inputs" placeholder="Text input"></textarea>
         </label>
 
+     
+
         <!-- Button Send -->
-        <button class="modal-btn btn" type="submit">Send</button>
+        <button class="modal-btn btn" type="submit" disabled>Send</button>
       </form>
     </div>
   </div>
