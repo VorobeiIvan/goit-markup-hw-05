@@ -143,8 +143,9 @@ address {
 }
 
 input {
-	font-family: inherit;
+    font-family: inherit;
 }
+
 /* ======================================== General helper classes ========================================  */
 .visually-hidden {
     position: absolute;
@@ -161,6 +162,9 @@ input {
 }
 
 .container {
+
+    /*   - 2px ? */
+
     width: 1158px;
     margin-inline: auto;
     padding-inline: 15px;
@@ -568,6 +572,7 @@ svg {
 
 .footer-social-media-box {
     display: flex;
+    margin-right: 80px;
     flex-direction: column;
     color: var(--crl-white-background);
     font-size: var(--body-medium-font-size, 16px);
@@ -609,21 +614,65 @@ svg {
 
 /* <!-- ---------- Footer e-mail input ---------- --> */
 
-.footer-form-box{
-    display: flex;   
+.footer-input-btn-box {
+    display: flex;
+    align-items: center;
 }
-.footer-input-lable{
+
+.footer-form {}
+
+.footer-input-label {
+    display: flex;
+    margin-bottom: 16px;
+
+    align-items: center;
+
+    color: var(--crl-white-background, #FFF);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
 
 }
-.input-footer-btn{
 
-}
 #input-email {
+    width: 264px;
+    height: 40px;
+    flex-shrink: 0;
+
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    background: var(--navyblue, #2E2F42);
+    border: 1px solid var(--crl-white-background, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--crl-white-background,#ffffff);
 
 }
-.footer-btn-icon{
+
+#input-email::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--crl-white-background, #FFF);
+}
+
+.input-footer-btn {
+
+    display: inline-flex;
+    margin-left: 24px;
+    padding: 8px 24px;
+    max-width: 165px;
+
+    align-items: center;
+    gap: 16px;
+    background: var(--crl-primary-brand, #4D5AE5);
+    border: none;
+    color: var(--crl-white-background, #FFFFFF);
 
 }
+
+.footer-btn-icon {}
 
 
 
@@ -638,8 +687,7 @@ svg {
     justify-content: center;
     gap: 24px;
     margin-top: 8px;
-    /* margin-left: 16px;
-    margin-right: 16px; */
+
 
 
 }
@@ -647,8 +695,6 @@ svg {
 .social-media-item {
     width: 40px;
     height: 40px;
-
-
 }
 
 
@@ -681,8 +727,6 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 
 }
 
