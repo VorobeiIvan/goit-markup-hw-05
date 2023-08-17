@@ -607,6 +607,25 @@ svg {
 
 }
 
+/* <!-- ---------- Footer e-mail input ---------- --> */
+
+.footer-form-box{
+    display: flex;   
+}
+.footer-input-lable{
+
+}
+.input-footer-btn{
+
+}
+#input-email {
+
+}
+.footer-btn-icon{
+
+}
+
+
 
 
 /* 
