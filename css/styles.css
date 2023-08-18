@@ -958,11 +958,10 @@ svg {
     flex-wrap: wrap;
     gap: 8px;
     margin-inline: 24px;
-
-
 }
 
 .modal-input {
+ position: relative;
     width: 360px;
     height: 40px;
 
@@ -981,8 +980,10 @@ svg {
     border: 1px solid var(--crl-primary-brand, #4D5AE5);
 }
 
-.modal-input::placeholder {
+.modal-input::placeholder
+.modal-textera::placeholder  {
     color: var(--crl-modal-overlay, rgba(46, 47, 66, 0.40));
+
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.02em;
@@ -996,8 +997,16 @@ svg {
     color: var(--lightslate, #8E8F99);
 }
 
+
+.modal-person-input-icon{
+    position: absolute;
+    top: 50%;
+    transform: (-50%);
+    left: 16px;
+}
+
 .modal-textera {
-    
+
     width: 360px;
     height: 120px;
     padding: 8px 16px 8px 16px;
@@ -1015,7 +1024,7 @@ svg {
 .modal-btn {
 
     display: inline-flex;
-    align-items: flex-start;
+    align-items:center;
     gap: 10px;
 
     padding: 16px 32px;
@@ -1030,5 +1039,5 @@ svg {
 }
 
 .modal-form.modal-btn {
-    align-items: center;
+    text-align: center;
 }
