@@ -552,13 +552,13 @@ START Footer | SECTION 7
         <form class="footer-form">
           <label class="footer-input-label">
             <input class="footer-input-email" type="email" name="footer-email" placeholder="E-mail" required />
-            <button class="input-footer-btn btn" type="submit" aria-label="Subscribe">
+          </label>
+          <button class="input-footer-btn btn" type="submit" aria-label="Subscribe">
               Subscribe
               <svg class="icon footer-btn-icon" width="24" height="24" aria-label="Subscribe button airplane icon">
                 <use href="./images/icons.svg#icon-plane"></use>
               </svg>
             </button>
-          </label>
         </form>
       </div>
     </div>
@@ -601,7 +601,9 @@ END Footer | SECTION 7
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
+        </div>
           <!-- Phone -->
+          <div class="modal-form-container">
           <label class="modal-input-label" for="user-phone">Phone</label>
           <div class="wrapper-input-svg">
             <input class="modal-input" id="user-phone" type="tel" name="user-phone"
@@ -610,7 +612,9 @@ END Footer | SECTION 7
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
+        </div>
           <!-- Email -->
+          <div class="modal-form-container">
           <label class="modal-input-label" for="user-email">Email</label>
           <div class="wrapper-input-svg">
             <input class="modal-input" id="user-email" type="email" name="user-email" required>
@@ -618,12 +622,15 @@ END Footer | SECTION 7
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
+        </div>
           <!--Message -->
+          
           <div class="wrapper-textarea-svg modal-form-container">
             <label class="modal-input-label" for="user-comment">Comment</label>
             <textarea class="modal-message" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
           </div>
           <!-- Checkbox -->
+         
           <div class="container-checkbox">
             <input class="modal-checkbox visually-hidden" id="user-privacy" type="checkbox" value="true"
               name="user-privacy">
@@ -640,7 +647,7 @@ END Footer | SECTION 7
 
           <!-- Button Send -->
           <button class="modal-btn btn" type="submit" disabled>Send</button>
-        </div>
+      
       </form>
 
     </div>
