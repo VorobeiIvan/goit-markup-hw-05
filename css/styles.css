@@ -1041,6 +1041,10 @@ svg {
 
 }
 
+.modal-checkbox:focus + .modal-checkbox-label>.wrapper-checkbox-svg{
+    border-color: #404bbf;
+}
+
 .modal-checkbox-label{
     display: block; 
     font-size: 12px;
@@ -1056,11 +1060,14 @@ svg {
     fill: var(--crl-light,#F4F4FD); 
 }
 
+
 .modal-privacy-policy-link {
     color: var(--crl-primary-brand, #4D5AE5);
 }
 
 .modal-btn {
+    margin-right: auto; 
+    margin-left: auto; 
     display: block; 
     min-width: 169px;
     height: 56px;
