@@ -991,6 +991,9 @@ svg {
 .wrapper-textarea-svg{
     margin-bottom: 16px;
 }
+.modal-message:focus{
+    border-color: #4D5AE5;
+}
 
 .modal-message {
 
@@ -1037,7 +1040,17 @@ svg {
     fill: transparent; 
 
 }
-.modal-checkbox-label:checked+.wrapper-checkbox-svg {
+
+.modal-checkbox-label{
+    display: block; 
+    font-size: 12px;
+    line-height: 1.17; 
+    letter-spacing: 0.04em; 
+    color: var(--crl-subtle-text,#8e8f99);
+}
+
+
+.modal-checkbox:checked + .wrapper-checkbox-svg {
     background-color:var(--crl-pressed-state,#404bbf); 
     border: none;
     fill: var(--crl-light,#F4F4FD); 
