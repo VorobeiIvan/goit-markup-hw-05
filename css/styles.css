@@ -1050,7 +1050,7 @@ svg {
 }
 
 
-.modal-checkbox:checked + .wrapper-checkbox-svg {
+.modal-checkbox:checked + .modal-checkbox-label>.wrapper-checkbox-svg{
     background-color:var(--crl-pressed-state,#404bbf); 
     border: none;
     fill: var(--crl-light,#F4F4FD); 
