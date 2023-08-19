@@ -617,7 +617,7 @@ svg {
     align-items: center;
 }
 
-.footer-form {}
+
 
 .footer-input-label {
     display: flex;
@@ -630,10 +630,9 @@ svg {
     line-height: 1.5;
     letter-spacing: 0.02em;
 
-
 }
 
-#input-email {
+.footer-input-email {
     width: 264px;
     height: 40px;
     flex-shrink: 0;
@@ -646,6 +645,14 @@ svg {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--crl-white-background, #ffffff);
 
+}
+
+.footer-input-email:focus{ 
+     
+    outline-color: transparent;
+    outline-offset: 4px;
+    border-color: var(--iris, #4D5AE5);
+    /* background-color: #31d0aa;  */
 }
 
 #input-email::placeholder {
@@ -992,6 +999,7 @@ svg {
 
 .modal-input:focus,
 .modal-message:focus
+
 {
     border-color: var(--iris, #4D5AE5);
     outline-color: transparent;
